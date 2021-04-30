@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>华为官网</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			.main-content {
+				/* width: 1260px; */
+			}
+
+			li {}
+
+			.header {
+				background-color: #f7f7f7;
+				height: 100px;
+				/* display: inline-block; */
+			}
+
+			img {
+				height: 80px;
+				width: 200px;
+				margin-left: 50px;
+				margin-top: 10px;
+				float: left;
+			}
+
+			.nav li a {
+				text-decoration: none;
+				color: black;
+				font-size: 25px;
+			}
+
+			.nav {
+				float: left;
+				list-style: none;
+			}
+
+			.nav li {
+				float: left;
+				line-height: 50px;
+				height: 50px;
+				margin-left: 50px;
+				margin-top: 25px;
+			}
+
+			.nav li a:hover::after {
+				content: "";
+				display: block;
+				width: auto;
+				height: 5px;
+				background-color: #000000;
+			}
+
+			.header>a {
+				text-decoration: none;
+				height: 50px;
+				width: 150px;
+				border-radius: 25px;
+				border: 1px solid #cccccc;
+				float: left;
+				color: #000000;
+				line-height: 50px;
+				text-align: center;
+				margin: 25px;
+			}
+
+			.header>a:hover {
+				border: 1px solid #000000;
+			}
+
+			.banner {
+				height: 600px;
+				background-image: url(img/banner1.jpg);
+				box-sizing: 100% 100%;
+			}
+
+			.left,
+			.right {
+				height: 600px;
+				width: 300px;
+				/* background-color: rgba(0,0,0,.4); */
+				
+			}
+			.left {
+				float: left;
+				margin-left: 100px;
+			}
+			.right {
+				float: right;
+				margin-right: 100px;
+			}
+			.left:hover::before {
+				float: left;
+				content: url(img/arrow-top.png);
+				transform: rotate(-90deg);
+				margin-top: 260px;
+			}
+			.right:hover::before {
+				float: right;
+				content: url(img/arrow-top.png);
+				transform: rotate(90deg);
+				margin-top: 260px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main-content"></div>
+		<div class="header">
+			<img src="img/logo.svg">
+			<ul class="nav">
+				<li><a href="#">手机</a></li>
+				<li><a href="#">笔记本</a></li>
+				<li><a href="#">平板</a></li>
+				<li><a href="#">智慧屏</a></li>
+				<li><a href="#">穿戴</a></li>
+				<li><a href="#">音频</a></li>
+			</ul>
+			<a href="#">华为商城</a>
+		</div>
+		<div class="banner">
+			<a href="#" class="left"></a>
+			<a href="#" class="right"></a>
+		</div>
+		</div>
+	</body>
+</html>
